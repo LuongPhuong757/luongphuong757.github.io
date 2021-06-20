@@ -1,0 +1,129 @@
+*{
+    padding:0;
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+}
+body {
+    display: flex;
+}
+a:hover {
+    text-decoration: none;
+    text-decoration: none;
+}
+.slidebar {
+    width: 240px;
+    height: 100vh;
+    background-color:black
+}
+.slidebar-logo {
+    padding: 10px;
+    width: 240px;
+    text-align: center;
+    top: 0;
+    position: fixed;
+    height: 10vh;
+    background-color: white;
+    box-shadow: 1px 1px 5px #ccc;
+}
+
+.slidebar-logo img {
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0px 50px;
+}
+.slidebar-menu {
+    width: 100%;
+    position: absolute;
+    top: 10vh;
+    /* overflow: auto; */
+    height: auto;
+}
+.slidebar-menu ul {
+    /* overflow: auto; */
+}
+.slidebar-menu ul li {
+    box-sizing: border-box;
+    border: 0;
+}
+.slidebar-menu a {
+    width: 240px;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    padding: 20px 10px;
+    border:0;
+    position: relative;
+
+}
+.slidebar-menu a i {
+    padding-right: 5px;
+}
+.slidebar-menu a:hover {
+    color: #cbba9c;
+    background-color: rgb(44, 43, 43);
+}
+.dropdown-menu {
+    border-radius: 0;
+    padding: 0;
+    width: 240px;
+    background-color: rgb(44, 43, 43);
+    border: none;
+    top: -2px !important; 
+    left: -5px !important;
+}
+.dropdown-toggle {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    position: relative !important;
+}
+.slidebar-custom {
+    display: flex;
+    width: 240px;
+    height: 5vh;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    background-color: white;
+    align-items: center;
+    box-shadow: 1px 1px 5px #ccc;
+}
+.slidebar-custom a {
+    margin: auto;
+    color: black;
+    font-weight: bold;
+}
+.slidebar-custom a:hover {
+    color: #cbba9c;
+}
+
+.menu-search {
+    position: relative;
+}
+.menu-search input {
+    outline: none;
+    height: 30px;
+}
+.menu-search i {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.main {
+    width: 100%;
+    max-width: calc(100% - 240px) !important;
+    padding: 0 !important;
+}
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+}
+.menu-right {
+    display: flex;
+}
+.menu-account {
+    display: flex;
+}

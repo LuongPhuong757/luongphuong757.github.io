@@ -1,0 +1,77 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(../image/banner-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: 100%;
+    background-attachment: fixed;
+    display: flex;
+}
+.form {
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 6px 12px 0 rgb(42 38 38);
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px ;
+}
+.form h2 {
+    color:white;
+    text-shadow: 4px 2px 4px #595656;
+    letter-spacing: 5px;
+}
+.form .row {
+   color: white;
+   margin: 3px;
+}
+.form .row .row-label {
+    display: block;
+    padding: 10px 0px 5px 0px;
+    font-size: 14px;
+}
+.form .row .row-text {
+    color: white;
+    background-color:rgba(0,0,0,0.16);
+    box-shadow: 0 6px 12px 0 rgb(50 45 45);
+    display: block;
+    border: 0;
+    height: 30px;
+    width: 250px;
+    border-left: 2px solid #00c6d7;
+    padding-left: 10px;
+    outline: none;
+}
+.form .row .error {
+    border-color: red;
+}
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.row-button {
+    width: 150px;
+    color: white;
+    background-color: rgba(0,0,0,0.16);
+    border: 2px solid #ccc;
+    height: 40px;
+    margin-top: 40px;
+    box-shadow: 0 6px 12px 0 rgb(75 69 69);
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.row-button:hover {
+    border-color:#00c6d7;
+}
+#row-span {
+    color: red;
+    padding-top: 5px;
+    display: block;
+}
+.display {
+    display: none;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/formDki.css">
+</head>
+<body>
+    <form action="" class="form-2 form" method="POST" id="login">
+         <h2>Đăng Nhập Tài Khoản</h2>
+         <div class="row">
+            <label for="fullname" class="row-label">Tài Khoản</label>
+            <input type="text" name="fullname" id="account-1" class="row-text" placeholder="VD:Tuấn Phương">
+            <span id="row-span"></span>
+         </div>
+         <div class="row">
+            <label for="fullname" class="row-label">Mật Khẩu</label>
+            <input type="text" name="fullname" id="password-1" class="row-text" placeholder="VD:Tuấn Phương">
+            <span id="row-span"></span>
+         </div>
+        <div class="buttons">
+            <div class="row">
+                <input type="submit" value="LOGIN" class="row-button">
+            </div>
+            <div class="row">
+                <input type="button" value="ĐĂNG KÍ" class="row-button" id="regis">
+            </div>
+        </div>
+    </form>
+    
+    <form class="form-1 form display" method="POST">
+        <h2>Đăng Kí Tài Khoản</h2>
+        <div class="row" >
+            <label for="fullname" class="row-label">Full Name</label>
+            <input type="text" name="fullname" id="fullname" class="row-text" placeholder="VD:Tuấn Phương">
+            <span id="row-span"></span>
+        </div>
+        <div class="row">
+            <label for="fullname" class="row-label">Email</label>
+            <input type="text" name="fullname" id="email" class="row-text" placeholder="VD:TuanPhuong@gmail.com"> 
+            <span id="row-span"></span>
+        </div>
+        <div class="row">
+            <label for="fullname" class="row-label">Tài Khoản</label>
+            <input type="text" name="fullname" id="account" class="row-text" placeholder="VD:TuanPhuong123">
+            <span id="row-span"></span>
+        </div>
+        <div class="row">
+            <label for="fullname" class="row-label">Mật khẩu</label>
+            <input type="text" name="fullname" id="password" class="row-text" placeholder="Nhập mật khẩu">
+            <span id="row-span"></span>
+        </div>
+        <div class="row">
+            <label for="fullname" class="row-label">Nhập lại mật khẩu</label>
+            <input type="text" name="fullname" id="againPassword" class="row-text" placeholder="Nhập lại mật khẩu">
+            <span id="row-span"></span>
+        </div>
+        <div class="row">
+            <input type="submit" value="LOGIN" class="row-button">
+        </div>
+    </form>
+    <script src="../JS/formDki2.js"></script>
+    <script src="../JS/formDki.js"></script>
+    <script>
+        Validate({
+            form :'.form-1',
+            rules : [
+                Validate.isFullName('#fullname'),
+                Validate.isFullName('#email'),
+                Validate.isFullName('#account'),
+                Validate.isFullName('#password'),
+                Validate.isFullName('#againPassword'),
+                // Validate.isEmail('#email'),
+                // Validate.isAccount('#account'),
+                // Validate.isPassword('#password'),
+                // Validate.isAgainPassword('#againPassword')
+            ],
+        })
+        Validate({
+            form :'.form-2',
+            rules : [
+                Validate.isFullName('#account-1'),
+                Validate.isFullName('#password-1'),
+            ],
+        })
+    </script>
+</body>
+</html>

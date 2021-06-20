@@ -1,0 +1,103 @@
+.contact-banner {
+    height: 180px;
+    background-image: url(../Image/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:100%;
+}
+.contact-banner-text {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.contact-banner-text  h3 {
+    color: white;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.contact-banner-text a {
+    color: white;
+    font-weight: 100;
+    font-size: 16px;
+}
+.contact-banner-text span {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.contact-banner-text > div {
+    word-spacing: 5px;
+}
+.contact-body {
+    padding: 100px 0px;
+}
+.contact-content {
+    align-items: center;
+}
+.contact-content-text ul {
+    list-style-type: none;
+}
+.contact-content-text ul li {
+    display: flex;
+    align-items: center;
+}
+.contact-content-text ul li a {
+    display:inline-block;
+    color: #334862;
+    padding: 5px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+.contact-content-text ul li i {
+    padding-right: 5px;
+    font-size: 24px;
+}
+.contact-content-text ul li a:hover {
+    color: black;
+}
+.contact-form {
+    margin: 20px 0px;
+}
+.contact-form-text h3 {
+    text-align: center;
+    word-spacing: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+.contact-form-table form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact-form-table form input {
+    flex-basis: 45%;
+    max-width: 45%;
+    height: 40px;
+    padding-left: 10px;
+    border: 0.5px solid #cfcece;
+    outline: none;
+    margin: 5px;
+}
+.contact-form-table form>div {
+    flex-basis: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+.contact-form-table form button {
+    border: none;
+    background-color: #cbba9c;
+    padding: 5px 50px;
+    color: white;
+    margin-top: 20px;
+}
+.contact-form-table form input:nth-child(5) {
+    height: 100px;
+    flex-basis: 100%;
+    max-width: 100%;
+}

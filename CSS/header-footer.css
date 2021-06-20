@@ -1,0 +1,119 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: "Muli", sans-serif;
+}
+.main {
+    display: none;
+    z-index: 103;
+    position:absolute;
+    width: 100%;
+    height: 100vh;
+    background-color:rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+.head {
+    background-color: white;
+}
+.header {
+    max-width: 1217px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo {
+    height: 90px;
+}
+.header-logo img{
+    box-sizing: border-box;
+    max-height: 90px;
+    padding: 10px;
+}
+.header-item {
+    display: block;
+    padding: 50px;
+    font-size: 30px;
+    color: rgb(146, 145, 145);
+    display: none;
+}
+.header-item:hover {
+    color: #cbba9c;
+}
+.header-menu {
+    display: flex;
+    align-items: center;
+}
+.header-menu  .header-menu-icon {
+    color: #6e6c6c;
+    padding: 5px 20px;
+    font-size: 20px;
+}
+.header-menu-icon {
+    border-right: 1px solid #ccc;
+}
+.header-menu-icon:first-child i{
+    font-weight: 500;
+}
+.header-menu-icon:last-child  {
+    border: unset;
+    font-size: 30px;
+}
+.header-menu-icon:last-child:hover {
+    color: #cbba9c;
+}
+
+.footer {
+    background-image: url(../Image/footerbg.jpg);
+    background-size: cover;
+    background-position: 100%;
+}
+.footer>div {
+    background-color: rgba(0,0,0,0.8);
+    max-width: 1217px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 50px 0px;
+}
+.footer>div .footer-item {
+    flex-basis: 25%;
+    color: white;
+    margin: 0px 20px;
+}
+.footer-item p {
+    color: #a4a4a4;
+    font-size: 14px;
+    padding: 5px 0px;
+}
+.footer-item h3 {
+    padding: 5px 0px;
+    font-size: 24px;
+    font-weight: 200;
+    font-family: "Muli", sans-serif;
+}
+.footer-form {
+    max-width: 100%;
+    position: relative;
+}
+.footer-item input {
+    padding-left: 10px;
+    outline: none;
+    height: 40px;
+    width: calc(100% - 10px);
+    /* width: 100%; */
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+.footer-form i {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: rgb(45, 102, 58);
+}

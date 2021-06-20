@@ -1,0 +1,31 @@
+.introduce-body {
+    align-items: center;
+    margin: 50px 0px;
+}
+.introduce-text {
+    text-align: center;
+    margin: 50px 0px;
+}
+.introduce-text h3 {
+    font-size: 50px;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+.introduce-text p {
+    font-size: 20px;
+    word-spacing: 2px;
+}
+.introduct-image img {
+    /* max-width: 100%; */
+    height: auto;
+}
+.introduce-item {
+    text-align: center;
+    padding: 20px 0px;
+}
+.introduce-item i {
+    font-size: 100px;
+}
+.introduce-item h3 {
+    padding: 10px 0px;
+}
